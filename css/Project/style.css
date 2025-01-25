@@ -1,0 +1,51 @@
+*{
+
+    margin: 0%;
+    padding: 0%;
+
+
+}
+
+ nav{
+    height: 10vh;
+    width: auto;
+    background-color: aqua;
+
+
+}
+
+#navleft{
+    
+    width: 20%;
+    float: left;
+
+
+}
+
+
+    #navleft image {
+    align-content: center;
+    width: 20%;
+    display: block;
+    float: left;
+
+    }
+
+#navright ul li {
+    background-color: aquamarine;
+    padding: 10%;
+    display: block;
+    margin-left: 100px ;
+
+
+
+
+
+
+}
+
+
+
+
+
+
