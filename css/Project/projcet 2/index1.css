@@ -25,6 +25,12 @@ h1{
     width: 20%;
     height: 85vh;
     float: left;
+
+#new{
+    background-color: rgb(234, 127, 255);
+    width: 20;
+    height: 10;
+    float: left;
 }
 
 ul, li{
