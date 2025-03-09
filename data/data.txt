@@ -1,0 +1,45 @@
+SELECT department_id, round(avg(salary)) 
+FROM hr.employees 
+group by department_id
+having max(SALARY)12000;
+
+
+SELECT first_name
+FROM hr.employees
+where first_name like 'S%'
+
+--Question No 4
+SELECT AVG(salary)
+FROM hr.employees
+WHERE job_id LIKE '%SA%';
+
+--Question No 5
+SELECT first_name||' '||last_name AS "Full Name", hire_date
+FROM hr.employees
+ORDER BY hire_date ASC;
+
+
+create table eep(  
+emp_id number (6) constraint emp_id_pk primary key,
+name varchar2(20),
+department varchar2(35), 
+designation varchar2 (28),
+salary number(8,2),
+email varchar2(30) not null,
+contact number(20) not null
+);
+alter table eep add (
+location varchar2(25)
+);
+    
+insert into eep values (1, 'arif','jee','assistant',10000,'arifur45@gmail.com',0178888,'mirpur');
+insert into eep values (2, 'arif','jee','assistant',10000,'arifur45@gmail.com',0178888,'mirpur');
+insert into eep values (3, 'arif','jee','assistant',10000,'arifur45@gmail.com',0178888,'mirpur');
+insert into eep values (4, 'arif','jee','assistant',10000,'arifur45@gmail.com',0178888,'mirpur');
+insert into eep values (5, 'arif','jee','assistant',10000,'arifur45@gmail.com',0178888,'mirpur');
+insert into eep values (6, 'arif','jee','assistant',10000,'arifur45@gmail.com',0178888,'mirpur');
+insert into eep values (7, 'arif','jee','assistant',10000,'arifur45@gmail.com',0178888,'mirpur');
+insert into eep values (8, 'arif','jee','assistant',10000,'arifur45@gmail.com',0178888,'mirpur');
+
+describe eep;
+select * from eep;
